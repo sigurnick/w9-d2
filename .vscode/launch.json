@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "debug",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "/Users/nicolasmastropietro/Documents/Epicode/📚Homework/w9-d2/script.ts",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register",
+        "-r",
+        "tsconfig-paths/register"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "debug2",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "/Users/nicolasmastropietro/Documents/Epicode/📚Homework/w9-d2/.vscode/launch.json",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register",
+        "-r",
+        "tsconfig-paths/register"
+      ]
+    }
+  ]
+}
