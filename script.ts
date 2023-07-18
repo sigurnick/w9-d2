@@ -1,5 +1,5 @@
 
-//------------------------------------[Son]------------------------------------
+//------------------------------------[Son class]------------------------------------
 class SonAccount{
 
     balance:number=0
@@ -55,7 +55,7 @@ class SonAccount{
 
 
 
-//------------------------------------[Mother]------------------------------------
+//------------------------------------[Mother class]------------------------------------
 class MotherAccount{
 
    
@@ -126,9 +126,6 @@ console.log('-------Figlio------');
 let luca = new SonAccount(30)
 
 
-console.log('=====================================');
-
-
 
 console.log('-------Madre------');
 let anna = new MotherAccount(100)
@@ -144,16 +141,7 @@ let anna = new MotherAccount(100)
 
 
 
-
-
-
-
-
-
-
-
-
-//------------------------------------[Mother]------------------------------------
+//------------------------------------[Mother form]------------------------------------
 const motherBalance = document.getElementById( //balance
     "mother-balance"
   ) as HTMLInputElement;
@@ -175,7 +163,7 @@ const motherTextWithDraw = document.getElementById( //withdraw input
 motherBalance.innerText = anna.balance.toString()
 
 
-//------------------------------------[Deposit]------------------------------------
+//------------------------[Deposit]-----------------------
 motherFormDeposit.addEventListener('submit',function(e){
     e.preventDefault()
 
@@ -191,7 +179,7 @@ motherInputDeposit.value = ''
 
 
 
-//------------------------------------[Withdraw]------------------------------------
+//--------------------------[Withdraw]---------------------
 motherFormWithDraw.addEventListener('submit',function(e){
     e.preventDefault()
 
@@ -217,17 +205,7 @@ motherInputWithDraw.value = ''
 
 
 
-
-
-
-
-
-
-
-
-
-
-//------------------------------------[Son]------------------------------------
+//------------------------------------[Son form]------------------------------------
 const sonBalance = document.getElementById( //balance
     "son-balance"
   ) as HTMLInputElement;
@@ -249,7 +227,7 @@ const sonTextWithDraw = document.getElementById( //withdraw input
 sonBalance.innerText = luca.balance.toString()
 
 
-//------------------------------------[Deposit]------------------------------------
+//------------------------[Deposit]------------------------
 sonFormDeposit.addEventListener('submit',function(e){
     e.preventDefault()
 
@@ -265,7 +243,7 @@ sonInputDeposit.value = ''
 
 
 
-//------------------------------------[Withdraw]------------------------------------
+//-------------------------[Withdraw]-------------------
 sonFormWithDraw.addEventListener('submit',function(e){
     e.preventDefault()
 

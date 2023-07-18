@@ -1,5 +1,5 @@
 "use strict";
-//------------------------------------[Son]------------------------------------
+//------------------------------------[Son class]------------------------------------
 class SonAccount {
     constructor(balance) {
         this.balance = 0;
@@ -40,7 +40,7 @@ class SonAccount {
         }
     }
 }
-//------------------------------------[Mother]------------------------------------
+//------------------------------------[Mother class]------------------------------------
 class MotherAccount {
     constructor(balance) {
         this.balance = 0;
@@ -89,10 +89,9 @@ class MotherAccount {
 }
 console.log('-------Figlio------');
 let luca = new SonAccount(30);
-console.log('=====================================');
 console.log('-------Madre------');
 let anna = new MotherAccount(100);
-//------------------------------------[Mother]------------------------------------
+//------------------------------------[Mother form]------------------------------------
 const motherBalance = document.getElementById(//balance
 "mother-balance");
 const motherFormDeposit = document.getElementById(//deposit form
@@ -102,7 +101,7 @@ const motherFormWithDraw = document.getElementById(//withdraw form
 const motherTextWithDraw = document.getElementById(//withdraw input
 "mother-withdraw-input");
 motherBalance.innerText = anna.balance.toString();
-//------------------------------------[Deposit]------------------------------------
+//------------------------[Deposit]-----------------------
 motherFormDeposit.addEventListener('submit', function (e) {
     e.preventDefault();
     const motherInputDeposit = document.getElementById(//deposit input
@@ -111,7 +110,7 @@ motherFormDeposit.addEventListener('submit', function (e) {
     motherBalance.innerText = anna.balance.toString();
     motherInputDeposit.value = '';
 });
-//------------------------------------[Withdraw]------------------------------------
+//--------------------------[Withdraw]---------------------
 motherFormWithDraw.addEventListener('submit', function (e) {
     e.preventDefault();
     const motherInputWithDraw = document.getElementById(//WithDraw input
@@ -121,7 +120,7 @@ motherFormWithDraw.addEventListener('submit', function (e) {
     motherInputWithDraw.value = '';
 });
 //-----------------------------------------------------------------------------------------------------
-//------------------------------------[Son]------------------------------------
+//------------------------------------[Son form]------------------------------------
 const sonBalance = document.getElementById(//balance
 "son-balance");
 const sonFormDeposit = document.getElementById(//deposit form
@@ -131,7 +130,7 @@ const sonFormWithDraw = document.getElementById(//withdraw form
 const sonTextWithDraw = document.getElementById(//withdraw input
 "son-withdraw-input");
 sonBalance.innerText = luca.balance.toString();
-//------------------------------------[Deposit]------------------------------------
+//------------------------[Deposit]------------------------
 sonFormDeposit.addEventListener('submit', function (e) {
     e.preventDefault();
     const sonInputDeposit = document.getElementById(//deposit input
@@ -140,7 +139,7 @@ sonFormDeposit.addEventListener('submit', function (e) {
     sonBalance.innerText = luca.balance.toString();
     sonInputDeposit.value = '';
 });
-//------------------------------------[Withdraw]------------------------------------
+//-------------------------[Withdraw]-------------------
 sonFormWithDraw.addEventListener('submit', function (e) {
     e.preventDefault();
     const sonInputWithDraw = document.getElementById(//WithDraw input
